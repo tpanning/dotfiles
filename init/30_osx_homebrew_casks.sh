@@ -19,38 +19,38 @@ brew cask info this-is-somewhat-annoying 2>/dev/null
 # Homebrew casks
 casks=(
   # Applications
-  a-better-finder-rename
-  bettertouchtool
-  charles
-  chromium
-  chronosync
-  dropbox
-  fastscripts
-  firefox
-  google-chrome
-  gyazo
+  #a-better-finder-rename
+  #bettertouchtool
+  #charles
+  #chromium
+  #chronosync
+  #dropbox
+  #fastscripts
+  #firefox
+  #google-chrome
+  #gyazo
   hex-fiend
   istat-menus
-  iterm2
-  launchbar
-  macvim
-  moom
-  omnidisksweeper
+  #iterm2
+  #launchbar
+  #macvim
+  #moom
+  #omnidisksweeper
   race-for-the-galaxy
-  reaper
+  #reaper
   remote-desktop-connection
-  sonos
-  spotify
-  steam
-  synology-assistant
-  teamspeak-client
+  #sonos
+  #spotify
+  #steam
+  #synology-assistant
+  #teamspeak-client
   the-unarchiver
   todoist
-  totalfinder
+  #totalfinder
   tower
   transmission-remote-gui
-  vagrant
-  virtualbox
+  #vagrant
+  #virtualbox
   vlc
   # Quick Look plugins
   betterzipql
