@@ -1,6 +1,4 @@
 set go-=T " Hide toolbar
-set go-=r " Hide right scrollbar
-set go-=L " Hide left scrollbar
 
 " My favorite font!
 set guifont=mplusForPowerline-1m-regular:h16

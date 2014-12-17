@@ -7,6 +7,8 @@
   excludesfile = ~/.gitignore_global
 [apply]
   whitespace = fix
+[push]
+	default = simple
 [alias]
   br = branch
   ci = commit
