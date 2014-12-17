@@ -1,3 +1,6 @@
+# Use vi keybindings in bash
+set -o vi
+
 # Case-insensitive globbing (used in pathname expansion)
 shopt -s nocaseglob
 
