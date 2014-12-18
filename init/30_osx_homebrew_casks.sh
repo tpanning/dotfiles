@@ -36,7 +36,7 @@ casks=(
   #macvim
   #moom
   #omnidisksweeper
-  race-for-the-galaxy
+  #race-for-the-galaxy
   #reaper
   remote-desktop-connection
   #sonos
@@ -45,10 +45,10 @@ casks=(
   #synology-assistant
   #teamspeak-client
   the-unarchiver
-  todoist
+  #todoist
   #totalfinder
   tower
-  transmission-remote-gui
+  #transmission-remote-gui
   #vagrant
   #virtualbox
   vlc
