@@ -56,6 +56,9 @@ Plugin 'bling/vim-airline'
 " Needed in order to get the statusline when the window isn't split
 set laststatus=2
 
+" For scala syntax highlighting (installed for work on Apache Spark)
+Plugin 'derekwyatt/vim-scala'
+
 "All of your Plugins must be added before the following line
 call vundle#end() " required
 filetype plugin indent on " required
