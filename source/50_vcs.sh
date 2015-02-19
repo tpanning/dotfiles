@@ -1,6 +1,11 @@
 
 # Git shortcuts
 
+# Use tab completion in bash
+if [[ -e "/usr/share/doc/git/contrib/completion/git-completion.bash" ]] ; then
+    source /usr/share/doc/git/contrib/completion/git-completion.bash
+fi
+
 alias g='git'
 function ga() { git add "${@:-.}"; } # Add all files by default
 alias gp='git push'
