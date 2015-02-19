@@ -55,6 +55,8 @@ Plugin 'Raimondi/delimitMate'
 Plugin 'bling/vim-airline'
 " Needed in order to get the statusline when the window isn't split
 set laststatus=2
+" Accomodate /** */ comments where in-between lines start with a ' *' to line things up
+let g:airline#extensions#whitespace#mixed_indent_algo = 1
 
 " For scala syntax highlighting (installed for work on Apache Spark)
 Plugin 'derekwyatt/vim-scala'
@@ -96,6 +98,8 @@ set ruler
 set showcmd
 " Do not display the current mode; airline will handle that
 set noshowmode
+" Highlight the line that the cursor is on
+set cursorline
 
 " Display the match for a search pattern when halfway typing it
 set incsearch
