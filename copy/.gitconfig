@@ -21,9 +21,9 @@
   #rv = review
   st = status
   #ksdiff = difftool -y -t Kaleidoscope
-[branch "master"]
-  remote = origin
-  merge = refs/heads/master
+#[branch "master"]
+#  remote = origin
+#  merge = refs/heads/master
 [color]
   ui = auto
 [color "branch"]

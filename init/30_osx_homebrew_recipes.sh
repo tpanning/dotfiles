@@ -12,13 +12,13 @@ recipes=(
   git-extras
   htop-osx
   hub
-  id3tool
+#  id3tool
   lesspipe
   man2html
   nmap
   sl
   ssh-copy-id
-  the_silver_searcher
+#  the_silver_searcher
   tree
 )
 
