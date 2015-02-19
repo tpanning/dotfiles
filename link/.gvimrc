@@ -1,7 +1,7 @@
 set go-=T " Hide toolbar
 
 " My favorite font!
-set guifont=mplusForPowerline-1m-regular:h16
+set guifont="mplusForPowerline-1m-regular:h16,Monospace 10"
 
 " Cmd-[, ]: Buffer Navigation
 nmap <D-[> :bprev<CR>
