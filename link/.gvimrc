@@ -10,7 +10,9 @@ vmap <D-[> <Esc>:bprev<CR>
 vmap <D-]> <Esc>:bnext<CR>
 
 " Cmd-T: New buffer
-macm File.New\ Tab key=<nop>
+if has("gui_macvim")
+    macm File.New\ Tab key=<nop>
+endif
 nmap <D-t> :enew<CR>
 vmap <D-t> <Esc>:enew<CR>
 
