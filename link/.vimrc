@@ -87,6 +87,11 @@ set expandtab
 " Now ; works just like : but with 866% less keypresses!
 nnoremap ; :
 
+" Gnome Terminal doesn't properly advertise its color support
+if $COLORTERM == 'gnome-terminal'
+    set t_Co=256
+endif
+
 " Turn on the pretty colors and highlight search matches, but only if there are
 " colors available
 if &t_Co > 2 || has("gui_running")
