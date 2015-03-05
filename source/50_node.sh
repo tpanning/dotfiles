@@ -25,7 +25,7 @@ function nave_install() {
 }
 
 # Global npm modules to install.
-npm_globals=(grunt-cli grunt-init linken bower node-inspector yo)
+npm_globals=(grunt-cli grunt-init linken bower node-inspector yo jshint)
 
 # Update npm and install global modules.
 function npm_install() {

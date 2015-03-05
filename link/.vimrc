@@ -38,7 +38,16 @@ Plugin 'nathanaelkane/vim-indent-guides'
 " but it would be nice to do it automatically.
 Plugin 'Raimondi/delimitMate'
 " Linting integration, but requires external linting tool
-"Plugin 'scrooloose/syntastic'
+Plugin 'scrooloose/syntastic'
+set statusline+=%#warningmsg#
+set statusline+=%{SyntaxStatusLineFlag()}
+set statusline+=%*
+
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 1
+let g:syntastic_javascript_checkers = ['jshint']
 " Autocompletion, but require extra install work
 " "Dumb" completion
 "Plugin 'Valloric/YouCompleteMe'
