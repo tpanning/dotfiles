@@ -1,6 +1,6 @@
 [user]
   name = Tom Panning
-  email = tom@tomandreina.us
+#  email = tom@tomandreina.us
 [core]
   autocrlf = input
   whitespace = fix,space-before-tab,tab-in-indent,trailing-space
