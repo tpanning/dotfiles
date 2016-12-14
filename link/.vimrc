@@ -45,9 +45,12 @@ set statusline+=%*
 
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 1
 let g:syntastic_javascript_checkers = ['jshint', 'jscs']
+
+:au BufRead,BufNewFile *.json set filetype=json
+
 " Autocompletion, but require extra install work
 " "Dumb" completion
 "Plugin 'Valloric/YouCompleteMe'
@@ -155,7 +158,8 @@ iabbrev #i #include
 "command Sqt call SimpleQt()
 
 " This will highlight extra whitespace only when opening the buffer and
-" leaving insert mode
+" leaving insert mode. It can be disabled with this command:
+" :highlight clear ExtraWhitespace
 highlight ExtraWhitespace ctermbg=red guibg=red
 au ColorScheme * highlight ExtraWhitespace guibg=red
 au BufEnter * match ExtraWhitespace /\s\+$/
@@ -214,3 +218,10 @@ let g:DoxygenToolkit_authorName="Tom Panning"
 let g:DoxygenToolkit_briefTag_pre=""
 " Set the syntax for pure doxygen files.
 au BufNewFile,BufRead *.doxygen setfiletype doxygen
+
+" Command to compare the contents of a recovered buffer (.swp file) with what is currently on the
+" disk. Use this with the script
+"     for file in $(find . -type f -name '.*.sw?'); do vim -r "$file" -c DiffOrig && rm -iv "$file"; done
+" Taken from http://superuser.com/questions/904031/vim-automatically-delete-swp-file-after-recovery-doesnt-change-the-original-f
+command DiffOrig vert new | set bt=nofile | r # | 0d_ | diffthis | wincmd p | diffthis
+
