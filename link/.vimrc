@@ -73,6 +73,9 @@ let g:airline#extensions#whitespace#mixed_indent_algo = 1
 " For scala syntax highlighting (installed for work on Apache Spark)
 Plugin 'derekwyatt/vim-scala'
 
+" Typescript syntax highlighting
+Plugin 'leafgarland/typescript-vim'
+
 "All of your Plugins must be added before the following line
 call vundle#end() " required
 filetype plugin indent on " required
