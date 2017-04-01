@@ -5,6 +5,8 @@ is_osx || return 1
 PATH="/usr/local/bin:$(path_remove /usr/local/bin)"
 export PATH
 
+export NVM_PREFIX=$(brew --prefix nvm)
+
 # Trim new lines and copy to clipboard
 alias c="tr -d '\n' | pbcopy"
 
